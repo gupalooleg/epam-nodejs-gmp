@@ -1,14 +1,15 @@
 # EPAM Node.js global mentoring program Q3-Q4 2024
 
-## Agenda:
+## Module 1 requirements:
 
-1. Introduction to Node.js
-2. Node.js standard library
-3. EventEmitter & Buffer & Streams
-4. Network
-5. Testing
-6. Express & Layered Architecture
-7. Databases. NoSQL
-8. Databases. RDBMS
-9. Authorization & Authentication
-10. Deploy and Tools
+1. Install NVM, two version of Node.js, nodemon, ts-node.
+2. Create **getRandomNumber** function and export it by default(function returns a random integer from 1 to 1000).
+
+## Usage
+
+1. Compile: `npm run build`
+2. Use **getRandomNumber** function in terminal:
+   ```
+    node
+    require('./dist/index.js').default()
+   ```

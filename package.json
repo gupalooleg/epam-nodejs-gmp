@@ -13,7 +13,13 @@
   },
   "homepage": "https://github.com/gupalooleg/epam-nodejs-gmp#readme",
   "main": "dist/index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:nodemon": "nodemon --watch dist dist/index.js",
+    "startTS": "ts-node src/index.ts",
+    "startTS:nodemon": "nodemon --watch src src/index.ts"
+  },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
     "@types/jest": "^29.5.5",
