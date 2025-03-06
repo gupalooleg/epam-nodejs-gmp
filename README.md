@@ -15,6 +15,20 @@ Let's write our simplified version of the `top` CLI utility program. It provid
 7. Program supports `Linux`, `macOS`, and `Windows` operating systems.
 8. When the unsupported platform occurs it should log the `Unsupported platform` message to the `stderr` and exit from the program with the status code `1`.
 
+## Evaluation criteria
+
+| Criteria                                                                                              | Coefficient |
+| ----------------------------------------------------------------------------------------------------- | ----------- |
+| Only standard library is used.                                                                        | 1           |
+| System command (from Hints) is used to retrieve process name, CPU, and memory usage for:              |             |
+| - Linux                                                                                               | 1           |
+| - Windows                                                                                             | 1           |
+| - macOS                                                                                               | 1           |
+| Refresh rate is 10 times per second.                                                                  | 2           |
+| Command output is appends to `activityMonitor.log` file every 1 minute.                               | 2           |
+| Each update (command output) is not starting from the new line.                                       | 2           |
+| Program exits with status code `1` and the corresponding message in case of the unsupported platform. | 2           |
+
 ## Hints
 
 System commands to retrieve the process:
