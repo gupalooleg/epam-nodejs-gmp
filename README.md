@@ -1,6 +1,6 @@
 # EPAM Node.js global mentoring program Q3-Q4 2024
 
-## Module 1 requirements:
+## Acceptance criteria
 
 1. Install NVM, two version of Node.js, nodemon, ts-node.
 2. Create **getRandomNumber** function and export it by default(function returns a random integer from 1 to 1000).
