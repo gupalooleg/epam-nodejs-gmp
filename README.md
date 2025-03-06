@@ -1,5 +1,19 @@
 # EPAM Node.js global mentoring program Q3-Q4 2024
 
+## Getting started
+
+1. Install the dependencies
+
+Run the following command in your project directory to install the necessary dependencies:
+
+```
+npm install
+```
+
+2. Implement the tasks
+
+Start implementing the tasks one by one based on the provided descriptions. Feel free to install any extra dependencies that you think will help you to complete them more efficiently.
+
 ## Practical task
 
 ### Task 1: Implement an EventEmitter Class
