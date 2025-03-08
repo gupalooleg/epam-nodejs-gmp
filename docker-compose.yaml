@@ -1,0 +1,16 @@
+services:
+  db:
+    image: mongo
+    container_name: mongoDB
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${DB_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${DB_PASSWORD}
+      MONGO_INITDB_DATABASE: ${DB_NAME}
+    ports:
+      - ${DB_PORT}:${DB_CONTAINER_PORT}
+    volumes:
+      - ./docker-compose-db-init.js:/docker-entrypoint-initdb.d/docker-compose-db-init.js:ro
+      - mongoDBData:/data/db
+volumes:
+  mongoDBData:
